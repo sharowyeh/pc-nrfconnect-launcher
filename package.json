@@ -1,7 +1,7 @@
 {
     "name": "nrfconnect",
     "version": "3.8.0",
-    "description": "nRF Connect for Desktop",
+    "description": "nRF Connect for Desktop - DEBUG",
     "repository": {
         "type": "git",
         "url": "https://github.com/NordicSemiconductor/pc-nrfconnect-launcher.git"
@@ -117,6 +117,7 @@
         "react-dom": "16.13.1",
         "react-markdown": "4.3.1",
         "react-redux": "7.2.0",
+        "rimraf": "^3.0.2",
         "roboto-fontface": "0.10.0",
         "serialport": "8.0.8",
         "shasum": "1.0.2",

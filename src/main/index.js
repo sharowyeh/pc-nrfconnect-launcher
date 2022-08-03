@@ -36,6 +36,7 @@ electronApp.on('ready', () => {
     Menu.setApplicationMenu(applicationMenu);
     apps.initAppsDirectory()
         .then(() => {
+            console.log('====== main/index.js->onready->initAppsDir ======\n');
             if (config.getOfficialAppName()) {
                 return windows.openOfficialAppWindow(
                     config.getOfficialAppName(),

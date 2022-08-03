@@ -69,6 +69,8 @@ function openAppWindow(app) {
         }
     }
 
+    console.log(`DEBUG: openAppWindow app ${JSON.stringify(app)}`);
+
     const appWindow = browser.createWindow({
         title: `${app.displayName || app.name} v${app.currentVersion}`,
         url: `file://${config.getElectronResourcesDir()}/app.html?appPath=${
@@ -131,7 +133,15 @@ function openOfficialAppWindow(appName, sourceName) {
 }
 
 function openLocalAppWindow(appName) {
+    console.log(
+        '====== main/windows.js->openLocalAppWindow->appName ======\n',
+        appName
+    );
     return apps.getLocalApps().then(appList => {
+        console.log(
+            '====== main/windows.js->openLocalAppWindow->appList ======\n',
+            appList
+        );
         const localApp = appList.find(app => app.name === appName);
         if (localApp) {
             openAppWindow(localApp);

@@ -1,7 +1,7 @@
 {
     "name": "nrfconnect",
     "version": "3.11.1",
-    "description": "nRF Connect for Desktop",
+    "description": "nRF Connect for Desktop - DEBUG",
     "repository": {
         "type": "git",
         "url": "https://github.com/NordicSemiconductor/pc-nrfconnect-launcher.git"
